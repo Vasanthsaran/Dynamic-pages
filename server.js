@@ -22,8 +22,12 @@ app.post("/login",(req,res)=>{
     if(username=="vasanth" && pass=="vasanth@123"){
         res.sendFile(path.join(__dirname, "public", "index.html"))
     } else {
-        res.send("You can't access the page. OKAY!");
-        
+        res.send(`
+            <script>
+                alert("Incorrect Username or Password!");
+                window.location.href = "/"; 
+            </script>
+        `);
     }
 })
 

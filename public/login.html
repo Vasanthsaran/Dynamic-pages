@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <!-- public/index.html -->
+    <form action="/login" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+
+    <label for="password">Password:</label>
+    <!-- The name="password" part is exactly what body-parser looks for -->
+    <input type="password" id="password" name="password">
+
+    <button type="submit">Login</button>
+</form>
+
+    </form>
+</body>
+</html>

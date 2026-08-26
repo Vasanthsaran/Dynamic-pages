@@ -16,8 +16,8 @@ app.get("/",(req,res)=>{
 })
 
 app.post("/login",(req,res)=>{
-    username=req.body.username;
-    pass=req.body.password;
+    const  username=req.body.username;
+    const pass=req.body.password;
 
     if(username=="vasanth" && pass=="vasanth@123"){
         res.sendFile(path.join(__dirname, "public", "index.html"))
